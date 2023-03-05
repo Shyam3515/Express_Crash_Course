@@ -1,0 +1,21 @@
+To create package.json  --> npm init -y
+install express --> npm install express
+
+before without implementing anything (or) before creating routes on port, we can see Cannot GET /
+here '/' is the route for the index page.
+
+//NODE-MON
+we can install nodemon to automatically launch server without restart
+npm i -D nodemon
+We want it as dev Dependency, so we keep -D,..
+-> To use nodemon in package.json we need to create two-script
+    1)one is simply gonna start:"nodemon index"[for restarting the server]
+    2)dev:"nodemon index"[it constantly watches it]
+    3)now save it and run-> npm run dev <- in terminal
+
+//Middle ware 
+functions has access to request and response, and you can actually change and add things.
+
+//when ever you create something on the server or make changes you need to give post
+
+//we are going to install UUID, generates random ID
